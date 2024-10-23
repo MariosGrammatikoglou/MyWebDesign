@@ -1,0 +1,136 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: rgb(17, 17, 17);
+}
+
+img{
+    max-width: 100%;
+    margin-top:40px;
+}
+
+h1,h2{
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar{
+    background: rgb(17, 17, 17);
+    color:white;
+    height: 60px;
+}
+
+.navbar .logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    color:rgb(189, 187, 187);
+}
+
+.navbar a:active{
+    color:rgb(255, 255, 255);
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    margin-left: 20px;
+}
+
+/*
+.navbar ul li:nth-of-type(3){
+    margin-right:60px;
+}
+*/
+
+.header{
+    background-color: rgb(0, 0, 0);
+    color:#fff;
+    min-height: 500px;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img{
+    max-width: 300px;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header i{
+    margin-right:10px;
+}
+
+.boxes .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    flex:1;
+    background-color: #000000;
+    border-radius: 10px;
+    margin:40px 10px;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.6);
+    padding:15px 20px;
+}
+
+.box i{
+    margin-right:10px;
+}
+
+@media(max-width: 768px){
+    .header .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .boxes .container{
+        display: block;
+        text-align: center;
+    }
+}
